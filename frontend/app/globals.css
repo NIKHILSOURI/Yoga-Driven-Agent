@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 31, 41, 55; /* gray-800 */
+  --background-start-rgb: 240, 253, 244; /* green-50 */
+  --background-end-rgb: 239, 246, 255; /* blue-50 */
+}
+
+/* Disable dark mode for now - force light mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 31, 41, 55; /* Keep dark text even in dark mode preference */
+    --background-start-rgb: 240, 253, 244;
+    --background-end-rgb: 239, 246, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb)) !important;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Ensure all text is visible */
+* {
+  color: inherit;
+}
+
+/* Force text colors for common elements */
+h1, h2, h3, h4, h5, h6 {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+p, span, div, label, li, td, th {
+  color: inherit;
+}
+
+/* Ensure white backgrounds have dark text */
+.bg-white, .bg-gray-50, .bg-gray-100 {
+  color: #1f2937 !important; /* gray-800 */
+}
+
+/* Chart text colors - ensure all chart text is visible */
+.recharts-text,
+.recharts-label,
+.recharts-legend-item-text,
+.recharts-cartesian-axis-tick-value,
+.recharts-tooltip-label,
+.recharts-tooltip-item-value {
+  fill: #1f2937 !important;
+  color: #1f2937 !important;
+}
+
+/* Chart axis lines */
+.recharts-cartesian-axis-line {
+  stroke: #374151 !important;
+}
+
+/* Chart grid lines */
+.recharts-cartesian-grid line {
+  stroke: #e5e7eb !important;
+}
+
+/* Tooltip background */
+.recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  color: #1f2937 !important;
+}
+
+.recharts-tooltip-label {
+  color: #1f2937 !important;
+}
+
+/* Additional chart styling to ensure visibility */
+.recharts-wrapper {
+  color: #1f2937 !important;
+}
+
+.recharts-surface {
+  color: #1f2937 !important;
+}
+
+/* Force all text elements in charts to be dark */
+.recharts-layer text {
+  fill: #1f2937 !important;
+  color: #1f2937 !important;
+}
+
+/* Axis labels */
+.recharts-cartesian-axis-tick text {
+  fill: #374151 !important;
+  color: #374151 !important;
+}
+
+/* Legend text */
+.recharts-legend-wrapper text {
+  fill: #1f2937 !important;
+  color: #1f2937 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Ensure input fields are visible */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  background-color: white !important;
+  color: #111827 !important; /* gray-900 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important; /* gray-400 */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
