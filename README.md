@@ -1,5 +1,4 @@
-# 🧘‍♀️ NSMR Health Coach  
-### *Yoga-Driven Agentic Wellness & Nutrition Coach*
+### *Yoga-Driven Agentic Wellness & Nutrition Coach
 
 **Innov-AI-tion Challenge Submission**  
 **Problem Domain:** *Agentic Systems for Healthcare & Fitness*
