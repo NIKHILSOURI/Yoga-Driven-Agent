@@ -1,4 +1,4 @@
-### *Yoga-Driven Agentic Wellness & Nutrition Coach
+#Yoga-Driven Agentic Wellness & Nutrition Coach
 
 **Innov-AI-tion Challenge Submission**  
 **Problem Domain:** *Agentic Systems for Healthcare & Fitness*
@@ -32,6 +32,9 @@ Fitness & healthcare apps today:
 ✔ Transparent decision traces  
 
 ---
+## 🎯 Architecture
+<img width="2450" height="841" alt="graphviz (7)" src="https://github.com/user-attachments/assets/fdfcce75-1e0e-4d4f-bb46-ecc93b3e2c41" />
+
 
 ## 🎯 Objective
 
