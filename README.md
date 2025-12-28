@@ -21,7 +21,7 @@ Fitness & healthcare apps today:
 - provide **static plans**
 - lack **reasoning transparency**
 - fail to adapt based on **daily constraints**
-- don’t interact intelligently with **tools or feedback**
+- don't interact intelligently with **tools or feedback**
 - lack **long-term goal autonomy**
 
 ### Our system solves this by demonstrating true agentic capabilities:
